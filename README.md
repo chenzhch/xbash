@@ -1,5 +1,5 @@
 # xbash
-**bash eEnhanced tools**
+**bash enhanced tools**
 
 ### Compile the script and generate binary files
 ```bash
