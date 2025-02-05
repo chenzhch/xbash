@@ -55,3 +55,7 @@ Due to the non open source nature of ```xbash```, some people may be concerned a
 - 2024-12-06
  
   Initial version
+  
+- 2025-02-05
+ 
+  Fixed core dump 
