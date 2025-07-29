@@ -46,7 +46,9 @@ Due to the non open source nature of ```xbash```, some people may be concerned a
 
 ```xbash_android_v7a```  Android version 
 
-```xbash_linux_x86-64``` LINUX 64 bit version
+```xbash_linux_x86_64``` LINUX x86 64 bit version
+
+```xbash_linux_arm_64``` LINUX arm 64 bit version
 
 ```xbash_macOS_11.7.9_x86_64``` MacOS 64 bit version
 
