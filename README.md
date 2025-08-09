@@ -52,7 +52,13 @@ Due to the non open source nature of ```xbash```, some people may be concerned a
 
 ```xbash_macOS_11.7.9_x86_64``` MacOS 64 bit version
 
+```xbash_aix_7.1.3``` Aix 64 bit version
+
 ### History
+
+- 2025-08-09 tag 1.2
+
+  Fixed 0 byte xmalloc bug 
 
 - 2025-05-18 tag 1.1
  
