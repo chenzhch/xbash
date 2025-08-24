@@ -56,6 +56,10 @@ Due to the non open source nature of ```xbash```, some people may be concerned a
 
 ### History
 
+- 2025-08-24 tag 1.3
+
+  Fixed double free bug 
+
 - 2025-08-09 tag 1.2
 
   Fixed 0 byte xmalloc bug 
