@@ -1,12 +1,22 @@
 # xbash
-*Converting bash scripts to C code tools**
+*Converting bash scripts to C code tools*
 
 ### Install
+You can use the pre-built executable directly, or compile from source as follows:
+```bash
+tar xvf bash-5.2.37.tar.gz
+cp command.h execute_cmd.c shell.c  ./bash-5.2.37 
+cd bash-5.2.37
+./configure
+make
+mv bash xbash
+```
+### Use
 ```bash
 chmod +x xbash
 tar xvf bash-5.2.37.tar.gz
 cd bash-5.2.37
-./configure
+./configure LDFLAGS="-static"
 Modify BASHDIR and XBASH in the make.sh file to point to actual values
 ```
 
@@ -15,17 +25,6 @@ Modify BASHDIR and XBASH in the make.sh file to point to actual values
 sh make.sh example.sh
 ```
 It is recommended to use ```-static``` static compilation and ```strip``` to remove the symbol table, which increases the difficulty of reverse engineering. It is recommended to conduct comprehensive testing on the compiled program to prevent production failures. 
-
-Due to the non open source nature of ```xbash```, some people may be concerned about its security. The following methods can be used to generate code:
-
-1. Execute ```xbash example.sh``` in a virtual environment or other independent environment to generate ```example.sh.c```
-
-1. Copy ```example.sh.c``` to another uninstalled ```xbash``` only from [bash](https://www.gnu.org/software/bash/)The environment for downloading source code from the official website.
-
-1. ```cp example.sh.c shell.c``` Covering bash source code
-
-1. ```make``` Generate executable program
-
 
 ### Execute binary files
 ```bash
@@ -55,6 +54,10 @@ Due to the non open source nature of ```xbash```, some people may be concerned a
 ```xbash_aix_7.1.3``` Aix 64 bit version
 
 ### History
+
+- 2025-05-10 tag 1.4
+
+  Open Source
 
 - 2025-08-24 tag 1.3
 
