@@ -55,7 +55,7 @@ It is recommended to use ```-static``` static compilation and ```strip``` to rem
 
 ### History
 
-- 2025-05-10 tag 1.4
+- 2025-06-10 tag 1.4
 
   Open Source
 
